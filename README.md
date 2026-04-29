@@ -1,11 +1,11 @@
-# Finance Tracker
+**Finance Tracker**
 
-## Overview
-This project is a personal finance tracking application developed in Python to help users monitor their income, expenses, and overall financial balance. The system was designed to provide a simple, structured way to understand spending habits and improve money management.
+**Overview**  
+This project is a personal finance tracking application developed in Python to help users monitor their income, expenses, and overall financial balance. The system was designed to provide a simple and structured way to understand spending habits and improve money management.
 
 The application uses object-oriented programming principles and a modular design to ensure clarity, scalability, and maintainability.
 
-## Features
+**Features**  
 - Add income and expense transactions  
 - Categorise transactions  
 - View all transactions  
@@ -14,53 +14,31 @@ The application uses object-oriented programming principles and a modular design
 - Remove the most recent transaction  
 - Input validation for reliable data handling  
 
-## Project Structure
-The project is divided into multiple modules for better organisation:
+**Project Structure**  
+- main.py – Handles user interaction and program flow  
+- tracker.py – Core logic for managing transactions  
+- models.py – Data structures such as the Transaction class  
+- commands.py – Implements the command pattern for actions  
+- test_tracker.py – Unit tests using pytest  
 
-- `main.py` → Handles user interaction and program flow  
-- `tracker.py` → Core logic for managing transactions  
-- `models.py` → Data structures (e.g. Transaction class)  
-- `commands.py` → Implements command pattern for actions  
-- `test_tracker.py` → Unit tests using pytest  
+**Design Approach**  
+The system was built using object-oriented programming, where classes are used to organise data and behaviour logically. The command pattern was implemented to separate user actions from the core logic, improving flexibility and making the system easier to extend. A modular design was used so that each file has a clear responsibility, improving maintainability.
 
-## Design Approach
-The system was built using:
+**Testing**  
+The project includes unit tests written using pytest to verify correct functionality. These tests ensure that transactions are added and removed correctly, financial summaries are accurate, and invalid inputs are properly handled. This improves the reliability of the system.
 
-- Object-Oriented Programming (OOP)  
-  Classes are used to organise data and behaviour logically.
+**Version Control and Change Management**  
+This project was developed using Git and GitHub. Changes were tracked using commits, and branches were used to implement updates and fixes without affecting the main version. Pull requests were used to merge changes back into the main branch. This approach allowed all changes to be documented and tracked, making it possible to review or revert previous versions if needed.
 
-- Command Pattern  
-  User actions (e.g. add/remove transactions) are implemented as commands, improving flexibility and separation of concerns.
-
-- Modular Design  
-  Each file has a specific responsibility, making the code easier to maintain and extend.
-
-## Testing
-The project includes unit tests written using pytest to verify:
-
-- Correct addition and removal of transactions  
-- Accurate calculation of summaries  
-- Proper handling of invalid inputs  
-
-All core functionality is tested to ensure reliability.
-
-## Version Control and Change Management
-This project was developed using Git and GitHub:
-
-- Changes were tracked using commits  
-- Branches were used for implementing updates and fixes  
-- Pull requests were used to merge changes into the main branch  
-- Version history allows tracking and reverting changes if needed  
-
-## Future Improvements
-- Add file saving/loading (persistent storage)  
-- Develop a graphical user interface (GUI)  
+**Future Improvements**  
+- Add file saving and loading for persistent data  
+- Develop a graphical user interface  
 - Add budgeting and financial goal tracking  
-- Include data visualisation (charts/graphs)  
+- Include data visualisation such as charts  
 
-## Author
+**Author**  
 Michael Velissariou  
 University of Bath  
 
-## Repository
+**Repository**  
 https://github.com/mikevelissariou/financetracker
