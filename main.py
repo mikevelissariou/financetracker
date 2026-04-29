@@ -14,12 +14,12 @@ from tracker import FinanceTracker
 
 def display_menu() -> None:
     print("\n=== Personal Finance Tracker ===")
-    print("1. Add income")
+    print("1. Add revenue")
     print("2. Add expense")
     print("3. View all transactions")
     print("4. View summary")
     print("5. View expenses by category")
-    print("6. Remove last transaction")
+    print("6. Change previous transaction")
     print("7. Exit")
 
 
