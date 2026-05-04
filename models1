@@ -1,0 +1,9 @@
+from dataclasses import dataclass
+
+
+@dataclass
+class Transaction:
+    transaction_type: str
+    category: str
+    amount: float
+    description: str = ""
